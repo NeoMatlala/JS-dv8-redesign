@@ -5,7 +5,7 @@ Responsive Website for the company *DV8 Technology Group* created using HTML5, J
 
 ## What I have learned
 - Responsive Web Design
-- Web design
+- Web design using Adobe XD
 
 
 ## See it live

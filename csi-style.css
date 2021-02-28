@@ -101,6 +101,7 @@ main{
 }
 
 
+
 /*------------------------- HEADER --------------------*/
 .header{
     width: 100%;
@@ -110,21 +111,21 @@ main{
     left: 0;
     z-index: 100;
     background-color: #fff;
-    box-shadow: 0 4px 4px rgba(0,0,0,.1);
 }
 
 /*Change background when scrolling*/
 .scroll-header{
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    box-shadow: 0 4px 4px rgba(0,0,0,.1);
 }
 
 .scroll-header .nav-logo, .scroll-header .nav-toggle, .scroll-header .nav-link{
     color: #000;
 }
 
-.scroll-header .nav-menu{
-    background-color: var(--first-color-lighten);
+.scroll-header .nav-menu{/*
+    background-color: var(--first-color-lighten);*/
+    background-color: #fff;
 }
 
 /*------------------------- NAV --------------------*/

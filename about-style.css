@@ -101,6 +101,42 @@ main{
     color: #fff;
 }
 
+/* ----- SCROLL TOP -----*/
+.scrolltop{
+    position: fixed;
+    right: 2rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    /*
+    background-color: rgba(123,111,113,.7);*/
+    background-color: #a00;
+    color: #fff;
+    border-radius: .5rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrolltop:hover{
+    background-color: #fff;
+    color: #A00;
+}
+
+.scrolltop__icon{
+    font-size: 2rem;
+    color: var(--first-color-lighten);
+}
+
+/* show scroll top */
+.show-scroll{
+    visibility: visible;
+    bottom: 1rem;
+}
+
+
 
 /*------------------------- HEADER --------------------*/
 .header{
@@ -111,21 +147,21 @@ main{
     left: 0;
     z-index: 100;
     background-color: #fff;
-    box-shadow: 0 4px 4px rgba(0,0,0,.1);
 }
 
 /*Change background when scrolling*/
 .scroll-header{
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    box-shadow: 0 4px 4px rgba(0,0,0,.1);
 }
 
 .scroll-header .nav-logo, .scroll-header .nav-toggle, .scroll-header .nav-link{
     color: #000;
 }
 
-.scroll-header .nav-menu{
-    background-color: var(--first-color-lighten);
+.scroll-header .nav-menu{/*
+    background-color: var(--first-color-lighten);*/
+    background-color: #fff;
 }
 
 /*------------------------- NAV --------------------*/

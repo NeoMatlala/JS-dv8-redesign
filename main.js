@@ -1,3 +1,31 @@
+/* ----- SHOW MENU ----- */
+const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId)
+
+    if(toggle && nav){
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show-menu')
+        })
+    }
+}
+
+showMenu('nav-toggle', 'nav-menu')
+
+
+
+/* ----- REMOVE MENU MOBILE WHEN SELECTED ----- */
+const navLink = document.querySelectorAll('.nav-link')
+
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n=>n.addEventListener('click', linkAction))
+
+
+
+
 /* ----- SHOW SCROLL TOP ----- */
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top')
@@ -5,6 +33,9 @@ function scrollTop(){
 }
 
 window.addEventListener('scroll', scrollTop)
+
+
+
 
 /* ----- CHANGE HEADER'S BACKGROUND ----- */
 function scrollHeader(){
@@ -14,19 +45,3 @@ function scrollHeader(){
 }
 
 window.addEventListener('scroll', scrollHeader)
-
-
-/* SHOW ACTIVE LINK */
-/*const currentLocation = location.href;
-const menuItem = document.querySelectorAll('a');
-const menuLength = menuItem.length
-
-/*for( let i = 0; i < menuLength; i++){
-    if(menuItem[i].href === currentLocation){
-        menuItem[i].className = "active-link"
-    }
-}
-*/
-
-/*console.log(currentLocation)
-console.log('neo matlala')*/
