@@ -538,7 +538,8 @@ main{
 
 /*------------CONTACT SECTION---------------*/
 .contact{
-    height: 100vh;
+    overflow: hidden;
+    height: 130vh;
     width: 100%;
     padding-top: 10rem;
 }
