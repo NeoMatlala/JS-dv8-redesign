@@ -10,6 +10,15 @@
     --font-family: 'Montserrat', sans-serif;
 }
 
+@media screen and (max-width: 576px){
+    :root{
+        --nav-height: 6rem;
+        --heading-font-size: 1.6rem;
+        --text-font-size: 16px;
+        --line-height-size: 1.9;
+    }
+}
+
 
 /*-------------------- BASE STYLINGS --------------*/
 *, ::before, ::after{
@@ -185,6 +194,10 @@ main{
     display: flex;
     align-items: center;
     padding-top: .5rem;
+}
+
+.nav__toggle{
+    display: none;
 }
 
 .nav-item{
@@ -454,5 +467,220 @@ h2{
 @media screen and (max-width: 600){
     .footer{
         padding: 15px;
+    }
+}
+
+/*-------MEDIA QUERIES --------*/
+
+@media screen and (max-width: 768px){
+    .socials a i{
+        color: green;
+    }
+
+    .nav-menu-container{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding-top: 1.5rem;
+        text-align: center;
+        transition: .4s;
+        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        border-radius: 0 0 1rem 1rem;
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        row-gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .login-btn{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .header{
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .nav__toggle{
+        display: block;
+        
+    }
+
+    .nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav-menu-container{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .nav-list{
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo{
+        width: 6rem;
+        height: 5rem;
+    }
+
+    .nav__toggle{
+        font-size: 2rem;
+        color: #000;
+        cursor: pointer;
+        display: block;
+    }
+
+    /* show menu*/
+    .show-menu{
+        top: 5rem;
+        z-index: 100;
+        background-color: #fff;
+    }
+
+    /*bridge*/
+    .bridge-container{
+        flex-direction: column;
+        overflow: hidden;
+        height: 130vh;
+    }
+
+    .bridge-text-wrap,
+    .bridge-img-wrap{
+        width: 100%;
+    }
+
+    .bridge-text-wrap{
+        padding-left: 0;
+    }
+
+    .bridge-heading{
+        margin-top: 4rem;
+    }
+
+    .bridge-img-wrap img{
+        height: 16rem;
+        margin-left: 0rem;
+    }
+
+    /*task tracker*/
+    .task-tracker-container{
+        flex-direction: column;
+        overflow: hidden;
+        height: 120vh;
+    }
+
+    .task-tracker-img-wrap,
+    .task-tracker-text-wrap{
+        width: 100%;
+    }
+
+    .task-tracker-img-wrap{
+        margin-top: 4rem;
+        order: 2;
+    }
+    
+    .task-tracker-img{
+        height: 25rem;
+        border-radius: .2rem;
+        margin-left: 0rem;
+    }
+    
+    .task-tracker-text-wrap{
+        margin-top: 6rem;
+    }
+    
+    .task-tracker-heading{
+        font-size: var(--heading-font-size);
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+    }
+    
+    .task-tracker-text-wrap hr{
+        border: 2px solid #a00;
+        width: 25%;
+        margin-top: -.4rem;
+    }
+    
+    .task-tracker-desc{
+        line-height: var(--line-height-size);
+        font-size: var(--text-font-size);
+        margin-top: 1.5rem;
+    }
+
+    /*imsms*/
+    .imsms-container{
+        margin-top: 0rem;
+        overflow: hidden;
+        height: 170vh;
+        flex-direction: column;
+    }
+    
+    .imsms-img-wrap{
+        width: 100%;
+    }
+    
+    .imsms-img{
+        height: 22rem;
+        border-radius: .2rem;
+        margin-left: 0rem;
+    }
+    
+    .imsms-text-wrap{
+        width: 100%;
+        padding-left: 0rem;
+    }
+
+    .imsms-desc{
+        margin-top: 2rem;
+    }
+    
+    /*footer*/
+    .footer{
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .footer-right > *{
+        margin-top: 2rem;
+    }
+
+    .footer-right h2{
+        padding-top: 2rem;
+    }
+
+    .box{
+        margin-top: -.5rem;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+    }
+
+    .copy-container{
+        order: 2;
+        margin-top: 3rem;
+    }
+
+    .socials{
+        order: 1;
+    }
+
+    .socials a i{
+        color: #000;
+        
     }
 }

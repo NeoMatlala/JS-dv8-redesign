@@ -10,6 +10,14 @@
     --font-family: 'Montserrat', sans-serif;
 }
 
+@media screen and (max-width: 576px){
+    :root{
+        --nav-height: 6rem;
+        --heading-font-size: 1.6rem;
+        --text-font-size: 16px;
+        --line-height-size: 1.9;
+    }
+}
 
 /*-------------------- BASE STYLINGS --------------*/
 *, ::before, ::after{
@@ -181,6 +189,10 @@ main{
 
 .nav-menu-container{
     display: flex;
+}
+
+.nav__toggle{
+    display: none;
 }
 
 .nav-list {
@@ -410,8 +422,168 @@ h2{
     }
 }
 
-@media screen and (max-width: 600){
+@media screen and (max-width: 600px){
     .footer{
         padding: 15px;
+    }
+}
+
+/*-------MEDIA QUERIES --------*/
+
+@media screen and (max-width: 768px){
+    .socials a i{
+        color: green;
+    }
+
+    .nav-menu-container{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding-top: 1.5rem;
+        text-align: center;
+        transition: .4s;
+        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        border-radius: 0 0 1rem 1rem;
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        row-gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .login-btn{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .header{
+        width: 100%;
+    }
+
+    .nav__toggle{
+        display: block;
+        
+    }
+
+    .nav{
+        width: 90%;
+    }
+
+    .nav-menu-container{
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .logo{
+        width: 6rem;
+        height: 5rem;
+    }
+
+    .nav__toggle{
+        font-size: 2rem;
+        color: #000;
+        cursor: pointer;
+        display: block;
+    }
+
+    /* show menu*/
+    .show-menu{
+        top: 5rem;
+        z-index: 100;
+        background-color: #fff;
+    }
+
+    /*about us*/
+    .about-us{/*
+        background-color: red;*/
+        overflow: hidden;
+        height: 1180vh;
+    }
+
+    .about-title,
+    .about-desc,
+    .team-title,
+    .team-desc{
+        text-align: left;
+    }
+
+    .about-desc, 
+    .team-desc, 
+    .partners-desc{
+        padding: 0 0rem;
+    }
+
+    .team-wrap{
+        flex-direction: column;
+    }
+
+    .person{
+        margin-bottom: 1.5rem;
+    }
+
+    .partners{
+        flex-direction: column;
+        row-gap: .5rem;
+        justify-content: center;
+    }
+    .partners img{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .partner-heading{
+        font-weight: bold;
+        font-size: 1.4rem;
+        padding-bottom: .5rem;
+    }
+
+    .openserve,
+    .mtn{
+        margin-bottom: 2rem;
+    }
+
+    
+    /*footer*/
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer-right > *{
+        margin-top: 2rem;
+    }
+
+    .footer-right h2{
+        padding-top: 2rem;
+    }
+
+    .box{
+        margin-top: -.5rem;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+    }
+
+    .copy-container{
+        order: 2;
+        margin-top: 3rem;
+    }
+
+    .socials{
+        order: 1;
+    }
+
+    .socials a i{
+        color: #000;
+        
     }
 }
