@@ -4,20 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="products-style.css"><!--CSS STYLESHEET-->
+    <link rel="stylesheet" href="contact-style.css"> <!--STYLESHEET CSS-->
     <script src="https://use.fontawesome.com/8c5e977b71.js"></script><!--FONT AWESOME-->
-    <title>DV8 | Products</title>
+    <title>DV8 | Contact Us </title>
 </head>
 <body>
-    <!--SCROLL TOP-->
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-    </a>
 
     <!--NAVIGATION-->
     <header class='header' id='header'>
         <div class="nav">
-            <a href="index.html" class="logo"><img src="assets/dv8logo.png" alt="logo" class=''></a>
+            <a href="#" class="logo"><img src="assets/dv8logo.png" alt="logo" class=''></a>
 
             <div class="nav-menu-container" id='nav-menu'>
                 <ul class="nav-list">
@@ -25,9 +21,9 @@
                     <li class='nav-item'><a href="about.html" class='nav-link'>About Us</a></li>
                     <li class='nav-item'><a href="services.html" class='nav-link'>Services</a></li>
                     <li class='nav-item'><a href="solutions.html" class='nav-link'>Solutions</a></li>
-                    <li class='nav-item'><a href="products.html" class='nav-link active-link'>Products</a></li>
+                    <li class='nav-item'><a href="products.html" class='nav-link'>Products</a></li>
                     <li class='nav-item'><a href="csi.html" class='nav-link'>CSI</a></li>
-                    <li class='nav-item'><a href="contact.html" class='nav-link'>Contact Us</a></li>
+                    <li class='nav-item'><a href="contact.html" class='nav-link active-link'>Contact Us</a></li>
                 </ul>
 
                 <a href="login.html" class="login-btn">Login</a>
@@ -40,52 +36,40 @@
     </header>
 
     <main>
-        <!--BRIDGE-->
-        <section class='bridge' id='bridge'>
-            <div class="bridge-container">
-                <div class="bridge-text-wrap">
-                    <h1 class='bridge-heading'>The Bridge</h1>
-                    <hr>
-                    <p class='bridge-desc'>This monitoring and evaluation application is a data-driven, decision-making and school accountability tool. It integrates web technologies into teaching and learning, with a particular focus on tracking learner performance. The Bridge can also be defined as an analytics-based executive information System that covers the whole education system. It provides an early-warning system to the authorities about potential problem areas that require intervention.</p>
+        <!--CONTACT US-->
+        <section class="contact" id='about'>
+            <div class="contact-container">
+                <h1 class="contact-heading">We'd love to hear from you!</h1>
+                <p class="contact-desc">Be sure to contact us for any queries.</p>
+
+                <div class="info-container">
+                    <div class="card">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p class='card-desc'>Masingita House, 41 West Street, Houghton Estate, Johannesburg</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class='card-desc phone'>+27 11 312 5200</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class='card-desc email'>info@dv8techgroup.com</p>
+                    </div>
                 </div>
 
-                <div class="bridge-img-wrap">
-                    <img src="assets/the-bridge.png" alt="bridge section img">
-                </div>
-            </div>
-        </section>
-
-        <!--TASK TRACKER-->
-        <section class='task-tracker' id='task-tracker'>
-            <div class="task-tracker-container">
-                <div class="task-tracker-img-wrap">
-                    <img src="assets/tracker.jpg" alt="task-tracker section img" class='task-tracker-img'>
-                </div>
-
-                <div class="task-tracker-text-wrap">
-                    <h1 class='task-tracker-heading'>Task Tracker</h1>
-                    <hr>
-                    <p class='task-tracker-desc'>TaskTracker is designed to coordinate teamwork and measure project progress. Its functionality includes enabling IT request approvals, and tracking issues and incidents, software bugs and new product requirements. It further assists with tracking time and effort spent on each daily task and other organisational processes.</p>
-                </div>
-            </div>
-        </section>
-
-        <!--IMSMS-->
-        <section class='imsms' id='imsms'>
-            <div class="imsms-container">
-                <div class="imsms-text-wrap">
-                    <h1 class='imsms-heading'>IMSMS</h1>
-                    <hr>
-                    <p class='imsms-desc'>This solution is built with municipalities in mind. It automates and streamlines service delivery processes. In addition, it facilitates customer service through logging and tracking of complaints and/or issues reported to the municipality. The average turnaround time it takes to resolve complaints or attend to reported issue provides an indication of organisational efficiency and productivity. The key service delivery areas IMSMS allows the municipality to track include water and sanitation, roads and electricity infrastructure. The tool provides a means to collect information on all municipal service queries. It integrates cloud technologies, enabling seamless deployment. Another IMSMS key feature is a mobile phone application (APP), which allows ratepayers to log queries and to upload incident images.</p>
-                </div>
-
-                <div class="imsms-img-wrap">
-                    <img src="assets/imsms.png" alt="imsms section img" class='imsms-img'>
-                </div>
+                <!--<div class="form-container">
+                    <form class='form'>
+                        <label for="name">Name</label><input type="text" placeholder="Neo Matlala">
+                        <label for="email">Email</label><input type="email" placeholder="name@email.com">
+                        <label for="phone">Phone</label><input type="number" placeholder="012 3456 7890">
+                    </form>
+                </div>-->
             </div>
         </section>
     </main>
-    
+
     <!--FOOTER-->
     <footer class="footer">
         <hr>
@@ -140,7 +124,6 @@
         </div>
     </footer>
 
-    <!--MAIN JS-->
-    <script src="main.js"></script> 
+    <script src="main.js"></script> <!--MAIN JS-->
 </body>
 </html>
