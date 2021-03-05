@@ -8,6 +8,7 @@
     --text-font-size: 16px;
     --line-height-size: 1.4;
     --font-family: 'Montserrat', sans-serif;
+    --footer-hr-color: rgb(223, 223, 223);
 }
 
 @media screen and (max-width: 576px){
@@ -239,7 +240,7 @@ footer{
 }
 
 .footer hr{
-    border: 1px solid #a00;
+    border: 1px solid var(--footer-hr-color);
     margin-bottom: 2.5rem;
 }
 
